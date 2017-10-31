@@ -1,0 +1,2 @@
+https://ecp-prod.fnal.gov/idp/profile/SAML2/SOAP/ECP Fermi National Accelerator Laboratory
+https://ecp-prod.fnal.gov/idp-krb/profile/SAML2/SOAP/ECP Fermi National Accelerator Laboratory (Kerberos)
