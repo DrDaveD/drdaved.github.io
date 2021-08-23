@@ -2,9 +2,6 @@ function FindProxyForURL(url, host) {
 
     myip = myIpAddress();
     // alert("myIp: "+myip);
-    alert("myIp: "+myip);
-    alert("url: "+url);
-    alert("host: "+host);
     fnalurlpat = /http(s|):\/\/(www-tele)\.fnal\.gov/g;
     // cmsdaqpreseries at LHC Point 5
     if (shExpMatch(host,"*.cmsdaqpreseries")) {
@@ -78,7 +75,6 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"*ipmi.cern.ch")
              || shExpMatch(host,"ca.cern.ch")
 	     ) {
-        alert("for CERN");
 	// go direct if inside the CERN firewall
 	if (isInNet(myip, "137.138.0.0","255.255.0.0")
 	    || isInNet(myip, "128.142.0.0","255.255.0.0")
