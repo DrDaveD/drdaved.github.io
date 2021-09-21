@@ -86,6 +86,7 @@ function FindProxyForURL(url, host) {
     }
     // internal-only FNAL sites
     else if (fnalurlpat.test(url)
+    	     || shExpMatch(host,"*.fnal.gov")
     	     || shExpMatch(host,"bss*.fnal.gov")
              || shExpMatch(host,"oidapp*.fnal.gov")
              || shExpMatch(host,"finance.fnal.gov")
