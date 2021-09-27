@@ -2,7 +2,7 @@ function FindProxyForURL(url, host) {
 
     myip = myIpAddress();
     // alert("myIp: "+myip);
-    alert("url: "+url);
+    alert("url is "+url);
     fnalurlpat = /http(s|):\/\/(www-tele)\.fnal\.gov/g;
     // cmsdaqpreseries at LHC Point 5
     if (shExpMatch(host,"*.cmsdaqpreseries")) {
@@ -109,9 +109,11 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"eshq.fnal.gov")
              || shExpMatch(host,"fndca*.fnal.gov")
              || shExpMatch(host,"hr.fnal.gov")
-	     // This one depends on network.proxy.autoconfig_url.include_path
+	     // These depend on network.proxy.autoconfig_url.include_path
 	     //  being set to true in about:config
 	     || shExpMatch(url,"*/news.fnal.gov/fermilab-at-work*")
+	     || shExpMatch(url,"*/news.fnal.gov/wp-login*")
+	     || shExpMatch(url,"*/news.fnal.gov/mellon*")
 	    ) {
 	// go direct if inside the FNAL firewall
 	// if (isInNet(myip, "131.225.0.0","255.255.0.0")) {
