@@ -2,7 +2,7 @@ function FindProxyForURL(url, host) {
 
     myip = myIpAddress();
     // alert("myIp: "+myip);
-    alert("url is "+url);
+    // alert("url: "+url);
     fnalurlpat = /http(s|):\/\/(www-tele)\.fnal\.gov/g;
     // cmsdaqpreseries at LHC Point 5
     if (shExpMatch(host,"*.cmsdaqpreseries")) {
