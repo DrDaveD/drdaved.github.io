@@ -86,7 +86,6 @@ function FindProxyForURL(url, host) {
     }
     // internal-only FNAL sites
     else if (fnalurlpat.test(url)
-    	     || shExpMatch(host,"*.fnal.gov")
     	     || shExpMatch(host,"bss*.fnal.gov")
              || shExpMatch(host,"oidapp*.fnal.gov")
              || shExpMatch(host,"finance.fnal.gov")
@@ -109,7 +108,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"eshq.fnal.gov")
              || shExpMatch(host,"fndca*.fnal.gov")
              || shExpMatch(host,"hr.fnal.gov")
-	     || shExpMatch(url, "https://news.fnal.gov/fermilab-at-work/*")
+	     || shExpMatch(host,"news.fnal.gov")
 	    ) {
 	// go direct if inside the FNAL firewall
 	// if (isInNet(myip, "131.225.0.0","255.255.0.0")) {
