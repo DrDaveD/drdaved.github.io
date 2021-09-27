@@ -109,7 +109,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"eshq.fnal.gov")
              || shExpMatch(host,"fndca*.fnal.gov")
              || shExpMatch(host,"hr.fnal.gov")
-	     || shExpMatch(url, "https://news.fnal.gov/fermilab-at-work/submit-form/*")
+	     || shExpMatch(url, "https://news.fnal.gov/fermilab-at-work/*")
 	    ) {
 	// go direct if inside the FNAL firewall
 	// if (isInNet(myip, "131.225.0.0","255.255.0.0")) {
