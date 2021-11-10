@@ -114,7 +114,9 @@ function FindProxyForURL(url, host) {
 	     //  being set to true in about:config
 	     || shExpMatch(url,"*/news.fnal.gov/fermilab-at-work/submit-form*")
 	     || shExpMatch(url,"*/news.fnal.gov/wp-login*")
-	     || shExpMatch(url,"*.fnal.gov/mellon/*")
+	     // This one is involved with the submit-form but also just
+	     //  accessing home.fnal.gov
+	     // || shExpMatch(url,"*.fnal.gov/mellon/*")
 	    ) {
 	// go direct if inside the FNAL firewall
 	// if (isInNet(myip, "131.225.0.0","255.255.0.0")) {
