@@ -110,7 +110,9 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"fndca*.fnal.gov")
              || shExpMatch(host,"hr.fnal.gov")
              || shExpMatch(host,"dwdosgdev.fnal.gov")
+	     // propertyservice didn't work completely, still needed vpn
              || shExpMatch(host,"propertyservice.fnal.gov")
+             || shExpMatch(host,"timecard.fnal.gov")
 	     // These depend on network.proxy.autoconfig_url.include_path
 	     //  being set to true in about:config
 	     || shExpMatch(url,"*/news.fnal.gov/fermilab-at-work/submit-form*")
