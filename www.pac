@@ -121,6 +121,9 @@ function FindProxyForURL(url, host) {
 	     // This one is involved with the submit-form but also just
 	     //  accessing home.fnal.gov
 	     // || shExpMatch(url,"*.fnal.gov/mellon/*")
+	     // This is needed for redirect to work on multiple Fermilab
+	     //  web apps after verifying on pingprod
+	     || shExpMatch(url,"*.fnal.gov/mellon/postResponse")
 	    ) {
 	// go direct if inside the FNAL firewall
 	// if (isInNet(myip, "131.225.0.0","255.255.0.0")) {
