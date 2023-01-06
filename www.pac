@@ -116,6 +116,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"fcl1801.fnal.gov")
              || shExpMatch(host,"travel.fnal.gov")
              || shExpMatch(host,"cstweb.fnal.gov")
+             || shExpMatch(host,"fermicloud210.fnal.gov")
              || shExpMatch(url,"*/generalcounsel.fnal.gov/atwork*")
 	     // These depend on network.proxy.autoconfig_url.include_path
 	     //  being set to true in about:config
