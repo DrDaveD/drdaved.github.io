@@ -120,12 +120,13 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"rcds*.fnal.gov")
              || shExpMatch(host,"techpubs.fnal.gov")
              || shExpMatch(url,"*/generalcounsel.fnal.gov/atwork*")
+	     // The corresponding URLs used to work on news.fnal.gov
+	     //  but now they just go into an infinite SSO loop,
+	     //  so need to use VPN instead
 	     // These depend on network.proxy.autoconfig_url.include_path
 	     //  being set to true in about:config
-	     || shExpMatch(url,"*/news.fnal.gov/fermilab-at-work/submit-form*")
-	     || shExpMatch(url,"*/news.fnal.gov/wp-login*")
-	     || shExpMatch(url,"*/inside.fnal.gov/fermilab-at-work/submit-form*")
-	     || shExpMatch(url,"*/inside.fnal.gov/wp-login*")
+	     // || shExpMatch(url,"*/inside.fnal.gov/fermilab-at-work/submit-form*")
+	     // || shExpMatch(url,"*/inside.fnal.gov/wp-login*")
 	     // This is needed for redirect to work on multiple Fermilab
 	     //  web apps after verifying on pingprod
 	     // Comment out 6-16-23 because it seems to confuse loggin
