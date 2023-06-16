@@ -124,6 +124,7 @@ function FindProxyForURL(url, host) {
 	     //  being set to true in about:config
 	     || shExpMatch(url,"*/news.fnal.gov/fermilab-at-work/submit-form*")
 	     || shExpMatch(url,"*/news.fnal.gov/wp-login*")
+	     || shExpMatch(url,"*/inside.fnal.gov/fermilab-at-work/submit-form*")
 	     // This is needed for redirect to work on multiple Fermilab
 	     //  web apps after verifying on pingprod
 	     // Comment out 6-16-23 because it seems to confuse loggin
