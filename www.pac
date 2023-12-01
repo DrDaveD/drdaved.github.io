@@ -113,7 +113,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"propertyservice.fnal.gov")
              || shExpMatch(host,"timecard.fnal.gov")
              || shExpMatch(host,"ccdapps-prod.fnal.gov")
-             || shExpMatch(host,"fcl1801.fnal.gov")
+             || shExpMatch(host,"fcl*.fnal.gov")
              || shExpMatch(host,"travel.fnal.gov")
              || shExpMatch(host,"cstweb.fnal.gov")
              || shExpMatch(host,"fermicloud569.fnal.gov")
