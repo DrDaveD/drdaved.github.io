@@ -99,6 +99,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"cd-docdb.fnal.gov")
              || shExpMatch(host,"cmsganglia.fnal.gov")
              || shExpMatch(host,"tissue.fnal.gov")
+             || shExpMatch(host,"gibbs3.fnal.gov")
              || shExpMatch(host,"fife.fnal.gov")
              || shExpMatch(host,"buildmaster.fnal.gov")
              || shExpMatch(host,"fermipayroll.fnal.gov")
