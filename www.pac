@@ -121,6 +121,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"fermicloud492.fnal.gov")
              || shExpMatch(host,"rcds*.fnal.gov")
              || shExpMatch(host,"techpubs.fnal.gov")
+             || shExpMatch(host,"distdev01.fnal.gov")
              || shExpMatch(host,"cst-test-1.fnal.gov")
              || shExpMatch(url,"*/generalcounsel.fnal.gov/atwork*")
 	     // The corresponding URLs used to work on news.fnal.gov
@@ -142,6 +143,10 @@ function FindProxyForURL(url, host) {
 	//    return "DIRECT";
 	// }
         return "SOCKS5 127.0.0.1:1078";
+    }
+    else if (shExpMatch(host, "*mitmproxy.org")) {
+	// send through home LAN since seems to be blocked at FNAL
+	return "SOCKS5 127.0.0.1:1077";
     }
     // don't use proxies for https (SOCKS is OK)
     else if (shExpMatch(url, "https://*")) {
