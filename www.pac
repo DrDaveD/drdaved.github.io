@@ -123,7 +123,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"techpubs.fnal.gov")
              || shExpMatch(host,"ssimetrics.fnal.gov")
              || shExpMatch(host,"distdev01.fnal.gov")
-             || shExpMatch(host,"cst-test-1.fnal.gov")
+             || shExpMatch(host,"cst-test-*.fnal.gov")
              || shExpMatch(url,"*/generalcounsel.fnal.gov/atwork*")
 	     // The corresponding URLs used to work on news.fnal.gov
 	     //  but now they just go into an infinite SSO loop,
