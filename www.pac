@@ -75,6 +75,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"atlas-kibana-dev.mwt2.org")
              || shExpMatch(host,"*ipmi.cern.ch")
              || shExpMatch(host,"ca.cern.ch")
+             || shExpMatch(host,"login.cern.ch")
 	     ) {
 	// go direct if inside the CERN firewall
 	if (isInNet(myip, "137.138.0.0","255.255.0.0")
