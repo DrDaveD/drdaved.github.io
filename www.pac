@@ -67,6 +67,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"aiermis.cern.ch")
              || shExpMatch(host,"network.cern.ch")
              || shExpMatch(host,"judy.cern.ch")
+             || shExpMatch(host,"foreman.cern.ch")
              || shExpMatch(host,"landb.cern.ch")
              || shExpMatch(host,"lbweb.web.cern.ch")
              || shExpMatch(host,"monit-timber.cern.ch")
