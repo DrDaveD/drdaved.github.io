@@ -80,6 +80,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"adfs.cern.ch")
              || shExpMatch(host,"htvault.cern.ch")
              || shExpMatch(host,"frontiermondev*.cern.ch")
+             || shExpMatch(host,"dwdvault*.cern.ch")
 	     ) {
 	// go direct if inside the CERN firewall
 	if (isInNet(myip, "137.138.0.0","255.255.0.0")
