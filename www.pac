@@ -142,7 +142,7 @@ function FindProxyForURL(url, host) {
 	     //  web apps after verifying on pingprod
 	     // Comment out 6-16-23 because it seems to confuse loggin
 	     //  in for inside.fnal.gov
-	     || shExpMatch(url,"vip*.fnal.gov/mellon/postResponse")
+	     || shExpMatch(url,"*/vip*.fnal.gov/mellon/postResponse")
 	    ) {
 	// go direct if inside the FNAL firewall
 	// if (isInNet(myip, "131.225.0.0","255.255.0.0")) {
