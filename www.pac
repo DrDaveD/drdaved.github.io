@@ -117,32 +117,33 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"fndca*.fnal.gov")
              || shExpMatch(host,"hr.fnal.gov")
              || shExpMatch(host,"dwdosgdev.fnal.gov")
-             || shExpMatch(host,"propertyservice.fnal.gov")
-             || shExpMatch(host,"timecard.fnal.gov")
-             || shExpMatch(host,"ccdapps-prod.fnal.gov")
-             || shExpMatch(host,"fcl*.fnal.gov")
-             || shExpMatch(host,"travel.fnal.gov")
-             || shExpMatch(host,"cstweb.fnal.gov")
-             || shExpMatch(host,"fermicloud569.fnal.gov")
-             || shExpMatch(host,"fermicloud492.fnal.gov")
-             || shExpMatch(host,"rcds*.fnal.gov")
-             || shExpMatch(host,"techpubs.fnal.gov")
-             || shExpMatch(host,"ssimetrics.fnal.gov")
-             || shExpMatch(host,"distdev01.fnal.gov")
-             || shExpMatch(host,"cst-test-*.fnal.gov")
-             || shExpMatch(url,"*/generalcounsel.fnal.gov/atwork*")
-	     // The corresponding URLs used to work on news.fnal.gov
-	     //  but now they just go into an infinite SSO loop,
-	     //  so need to use VPN instead
-	     // These depend on network.proxy.autoconfig_url.include_path
-	     //  being set to true in about:config
-	     // || shExpMatch(url,"*/inside.fnal.gov/fermilab-at-work/submit-form*")
-	     // || shExpMatch(url,"*/inside.fnal.gov/wp-login*")
-	     // This is needed for redirect to work on multiple Fermilab
-	     //  web apps after verifying on pingprod
-	     // Comment out 6-16-23 because it seems to confuse loggin
-	     //  in for inside.fnal.gov
-	     || shExpMatch(url,"*/vip*.fnal.gov/mellon/postResponse")
+		 || shExpMatch(host,"propertyservice.fnal.gov")
+		 || shExpMatch(host,"timecard.fnal.gov")
+		 || shExpMatch(host,"ccdapps-prod.fnal.gov")
+		 || shExpMatch(host,"fcl*.fnal.gov")
+		 || shExpMatch(host,"travel.fnal.gov")
+		 || shExpMatch(host,"cstweb.fnal.gov")
+		 || shExpMatch(host,"fermicloud569.fnal.gov")
+		 || shExpMatch(host,"fermicloud492.fnal.gov")
+		 || shExpMatch(host,"rcds*.fnal.gov")
+		 || shExpMatch(host,"techpubs.fnal.gov")
+		 || shExpMatch(host,"ssimetrics.fnal.gov")
+		 || shExpMatch(host,"distdev01.fnal.gov")
+		 || shExpMatch(host,"cst-test-*.fnal.gov")
+		 || shExpMatch(url,"*/generalcounsel.fnal.gov/atwork*")
+		 // The corresponding URLs used to work on news.fnal.gov
+		 //  but now they just go into an infinite SSO loop,
+		 //  so need to use VPN instead
+		 // These depend on network.proxy.autoconfig_url.include_path
+		 //  being set to true in about:config
+		 // || shExpMatch(url,"*/inside.fnal.gov/fermilab-at-work/submit-form*")
+		 // || shExpMatch(url,"*/inside.fnal.gov/wp-login*")
+		 // This is needed for redirect to work on multiple Fermilab
+		 //  web apps after verifying on pingprod
+		 // Comment out 12-23-25 because it seems to confuse logging
+		 //  in for inside.fnal.gov, even from the outside, although
+		 //  it seems needed for propertyservice
+		 // || shExpMatch(url,"*/vip*.fnal.gov/mellon/postResponse")
 	    ) {
 	// go direct if inside the FNAL firewall
 	// if (isInNet(myip, "131.225.0.0","255.255.0.0")) {
