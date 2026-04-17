@@ -102,6 +102,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"appora*.fnal.gov")
              /* || shExpMatch(host,"wdrs.fnal.gov") */
              || shExpMatch(host,"intranet-int.fnal.gov")
+             || shExpMatch(host,"internal-mod.fnal.gov")
              || shExpMatch(host,"cd-docdb.fnal.gov")
              || shExpMatch(host,"cmsganglia.fnal.gov")
              || shExpMatch(host,"tissue.fnal.gov")
