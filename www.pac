@@ -110,7 +110,7 @@ function FindProxyForURL(url, host) {
              || shExpMatch(host,"fife.fnal.gov")
              || shExpMatch(host,"buildmaster.fnal.gov")
              || shExpMatch(host,"fermipayroll.fnal.gov")
-             || shExpMatch(host,"hcmweb.fnal.gov")
+             || shExpMatch(host,"hcm*web.fnal.gov")
              || shExpMatch(host,"computing.fnal.gov")
              || shExpMatch(host,"security.fnal.gov")
              || shExpMatch(host,"landscape*.fnal.gov")
