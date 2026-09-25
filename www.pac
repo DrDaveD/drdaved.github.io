@@ -93,6 +93,7 @@ function FindProxyForURL(url, host) {
     }
     // internal-only FNAL sites
     else if (fnalurlpat.test(url)
+    	     || shExpMatch(host,"koji.osg-htc.org")
     	     || shExpMatch(host,"bss*.fnal.gov")
              || shExpMatch(host,"oidapp*.fnal.gov")
              || shExpMatch(host,"finance.fnal.gov")
