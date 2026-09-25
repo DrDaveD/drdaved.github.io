@@ -137,7 +137,6 @@ function FindProxyForURL(url, host) {
 	     || shExpMatch(host,"scd-reporting.fnal.gov")
 	     || shExpMatch(host,"litellm.fnal.gov")
 	     || shExpMatch(host,"llm-keys.fnal.gov")
-	     || shExpMatch(host,"fermipoint.fnal.gov")
 	     || shExpMatch(host,"*apps.okd*.fnal.gov")
 	     || shExpMatch(host,"webui-int-rucio.fnal.gov")
 	     || shExpMatch(url,"*/generalcounsel.fnal.gov/atwork*")
