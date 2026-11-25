@@ -141,6 +141,7 @@ function FindProxyForURL(url, host) {
 	     || shExpMatch(host,"*apps.okd*.fnal.gov")
 	     || shExpMatch(host,"webui-int-rucio.fnal.gov")
 	     || shExpMatch(host,"api*.american-science-cloud.org")
+	     || shExpMatch(host,"portal.staging.americansciencecloud.org")
 	     || shExpMatch(url,"*/generalcounsel.fnal.gov/atwork*")
 	     // The corresponding URLs used to work on news.fnal.gov
 	     //  but now they just go into an infinite SSO loop,
